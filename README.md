@@ -26,6 +26,28 @@ La relation type de boîte et points associé est la suivante:
 - Les boites "ARME":
 Parmi les Armes, 2 sont disponibles. Le robot peut tirer des balles en attrapant un pistolet, c'est à dire des boites "Gun". Il peut aussi avoir des lasers en attrapant des boites "Laser". Le joueur ne peut pas avoir plus d'une arme à disposition.
 
+2) Comment jouer ? /Commandes
+Une fois le jeu lancé, les deux personnages peuvent se déplacer dans l'environnement grâce aux touches du clavier en translatant vers le haut, le bas, vers la gauche et la droite. Pour tirer et attaquer l'adversaire, une touche suplémentaire et unique à chaque joueurs doit être enfoncée. Voici la correspondance touches/fonctionnalités pour nos 2 joueurs:
+Touches du joueur 1:
+Touche "Z" : Translation à droite
+Touche "Q" : Translation à gauche
+Touche "S" : Translation vers le haut 
+Touche "D" : Translation vers le bas
+Touche "E" : Tir de projectiles
+
+Touches du joueur 2:
+Touche "M" : Translation à droite
+Touche "K" : Translation à gauche
+Touche "O" : Translation vers le haut 
+Touche "L" : Translation vers le bas
+Touche "P" : Tir de projectiles
+
+Si un joueur veut tirer, la direction du tir est le même que celui de son déplacement. Ainsi, si le joueur se déplace vers le haut et appuie sur le bouton correspondant au tir, alors il tirera vers le haut.
+
+3) Fin du jeu
+Le jeu se termine lorsqu'aucun point de vie ne reste chez l'un des joueurs, alors le joueur adverse remporte la victoire. 
+
+
 — Un commentaire sur comment votre programme est conçu, ce que vous avez fait,
 ce qui ne marche pas, et ce qui vous parait intéressant (i.e. ce que vous avez envie
 que votre correcteur regarde) dans votre implémentation.
