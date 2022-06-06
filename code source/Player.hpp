@@ -12,7 +12,7 @@ public:
     Player(const char* nom, float x, float y);
     ~Player();
     //getters et setters
-		sf::Sprite getSprite();
+	sf::Sprite getSprite();
     const sf::FloatRect getSpriteBounds() const;
     void setPos(float xpos, float ypos);
     void setMove(float xpos, float ypos);
@@ -44,15 +44,15 @@ public:
 
 
 protected:
-     int hp;
-     int maxhp;
-     int speed;
-     int attack;
-		 int sword;
-		 int gun;
-		 int laser;
-     std::vector<Projectile*> projectiles;
-     int dir;
+    int hp;
+    int maxhp;
+    int speed;
+    int attack;
+	int sword;
+	int gun;
+	int laser;
+	std::vector<Projectile*> projectiles;
+    int dir;
 };
 
 #endif // PLAYER_HPP

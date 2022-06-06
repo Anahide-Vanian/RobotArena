@@ -1,12 +1,6 @@
 #ifndef OBJECT_HPP
 #define OBJECT_HPP
 
-/*
-#include<iostream>
-#include"SFML/Graphics.hpp"
-#include"SFML/Window.hpp"
-#include"SFML/System.hpp"
-#include"math.h"*/
 
 #include "Renderer.hpp"
 class Object {
@@ -15,8 +9,8 @@ public:
     virtual void display(Renderer& renderer) const = 0;
     virtual ~Object() {};
 protected:
-    float xpos;
-    float ypos;
+    float xpos;//position en x de l'objet
+    float ypos;//position en y de l'objet
     sf::Texture texture;
     sf::Sprite sprite;
 };

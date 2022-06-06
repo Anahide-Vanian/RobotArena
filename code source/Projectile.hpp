@@ -11,7 +11,7 @@ public:
     Projectile();
     Projectile(float x, float y,int dire);
     //~Player();
-		sf::Sprite getSprite();
+	sf::Sprite getSprite();
     const sf::FloatRect getSpriteBounds() const;
     void setPos(float xpos, float ypos);
     void setMove(Player& p);
