@@ -8,16 +8,20 @@ Arme::Arme(){
 }
 
 //getters/setters
+
+//retourne les bords de notre sprite
 const sf::FloatRect Arme::getSpriteBounds() const{
 	return this->sprite.getGlobalBounds();
 }
 
+//retourne le sprite
 sf::Sprite Arme::getSprite(){
 		return this->sprite;
 }
 
 //fonctions
 
+//initialise le sprite et sa texture
 void Arme::initObject(){
 	if(!this->texture.loadFromFile("laser.png")){
 		std::cout << "load fail" << std::endl;
@@ -25,6 +29,7 @@ void Arme::initObject(){
 	this->sprite.setTexture(this->texture);
 }
 
+//initialise le sprite, sa texture, sa taille et sa position
 void Arme::initObject(const char* nom, int x, int y){
 	if(!this->texture.loadFromFile(nom)){
 		std::cout << "load fail" << std::endl;
@@ -35,11 +40,13 @@ void Arme::initObject(const char* nom, int x, int y){
 }
 // Display methods
 
+//affiche le sprite de notre objet
 void Arme::display(Renderer& renderer) const
 {
     //renderer.displayArme(this->sprite);
 }
 
+//initialise la position du sprite à une position aléatoire
 void Arme::initRandomPosition(){
 
 	//random position
@@ -50,6 +57,7 @@ void Arme::initRandomPosition(){
 	this->sprite.setPosition(posX, posY);
 }
 
+//augmente les points d'attaque du joueur de 1
 void Arme::gainStat(Player& player){
   int hp = player.getHp();
 }

@@ -9,7 +9,9 @@ class Player : public DynamicObject {
 
 public:
     Player();
-    //~Player();
+    Player(const char* nom, float x, float y);
+    ~Player();
+    //getters et setters
 		sf::Sprite getSprite();
     const sf::FloatRect getSpriteBounds() const;
     void setPos(float xpos, float ypos);

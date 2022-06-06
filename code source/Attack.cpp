@@ -9,7 +9,7 @@ Attack::Attack(){
 //getters/setters
 
 //fonctions
-
+//initialise le sprite et sa texture
 void Attack::initObject(){
 	//init Texture and sprite
 	if(!(this->texture.loadFromFile("attack.png"))){
@@ -20,30 +20,14 @@ void Attack::initObject(){
 	this->initRandomPosition();//random position
 }
 
+//affichage du sprite de notre objet
 void Attack::display(Renderer& renderer) const
 {
     renderer.displayAttack(this->sprite);
 }
 
+//augmente les points d'attaque du joueur de 1
 void Attack::gainStat(Player& player){
   	player.setAttack(player.getAttack()+1);
 }
-/*
 
-void Attack::colisionBonus(Player player){
-	for(int i=0; i<attacks.size(); i++){
-		//player1 movement
-		if(player.getSpriteBounds().intersects(attacks[i]->getSpriteBounds())){
-			attacks.erase(attacks.begin() + i);
-			std::cout << "intercept attack" << std::endl;
-			//bonus->gainStat(1);
-		}
-}
-}
-
-void Attack::spawnBonus(){
-	//sprawn lasers
-	for(int i=0; i<4; i++){
-		this->attacks.push_back(new Attack());
-	}
-}*/

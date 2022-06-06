@@ -7,7 +7,6 @@
 
 class Arme : public Object{
 
-
 	public:
 	//Constructors/Destructors
 	Arme();
@@ -25,7 +24,7 @@ class Arme : public Object{
 	void gainStat(Player& player);
 
 	protected:
-		//attributs
+	//attributs
 
 };
 

@@ -15,6 +15,7 @@ DynamicObject::DynamicObject(){
 
 
 //fonctions
+//initialise le sprite, sa texture avec sa position
 void DynamicObject::initObject(const char* nom, int x, int y){
 	if(!this->texture.loadFromFile("robot1.png")){
 		std::cout << "load fail" << std::endl;
